@@ -7,7 +7,6 @@ const Drivers = () => {
     return drivers && drivers?.DriverTable?.Drivers.length <= 1
   }
 
-  console.log(drivers)
   if (shouldRenderNoResults()) {
     return <></>
   }
@@ -15,13 +14,19 @@ const Drivers = () => {
   return (
     <>
       {drivers && (
-        <ul>
+        <main className='drivers'>
           {
             drivers.DriverTable.Drivers.map(driver => {
-              return <li key={driver.driverId}>{driver.driverId}</li>
+              return (
+                <article key={driver.driverId} className='driver-info'>
+                  <img src='src/assests/drivers/image.avif' alt='Mark Zuckerberg' className='picture' />
+                  <span className='leaderboard__name'>{driver.givenName} {driver.familyName}</span>
+                  <span className='leaderboard__value'>{driver.permanentNumber}</span>
+                </article>
+              )
             })
             }
-        </ul>
+        </main>
       )}
     </>
   )
