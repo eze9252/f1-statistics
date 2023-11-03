@@ -7,6 +7,7 @@ const Drivers = () => {
     return drivers && drivers?.DriverTable?.Drivers.length <= 1
   }
 
+  console.log(drivers)
   if (shouldRenderNoResults()) {
     return <></>
   }
