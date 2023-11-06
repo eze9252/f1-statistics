@@ -7,13 +7,9 @@ describe('Service drivers', () => {
   const WRONG_YEAR = '18859'
   it('should return drivers when pass a correct year', async () => {
     const expectedResponse: DriversResponse = {
-      xmlns: expect.anything(),
-      series: expect.anything(),
-      url: expect.anything(),
-      limit: expect.anything(),
-      offset: expect.anything(),
-      total: expect.anything(),
-      DriverTable: expect.anything()
+      season: expect.anything(),
+      round: expect.anything(),
+      DriverStandings: expect.anything()
     }
     const result = await getDrivers().execute(CORRECT_YEAR)
 

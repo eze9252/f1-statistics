@@ -1,8 +1,19 @@
 @font-face {
-    font-family: "F1";   /*Can be any text*/
+    font-family: "F1";
     src: local("Formula1-Regular-1"),
       url("./font/Formula1-Regular-1.ttf") format("truetype");
 }
+@font-face {
+  font-family: "F1Black";
+  src: local("Formula1-Black"),
+    url("./font/Formula1-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "F1Wide";
+  src: local("Formula1-Wide"),
+    url("./font/Formula1-Wide.ttf") format("truetype");
+}
+
 body {
     font-family: F1;
     margin: 0;
@@ -57,23 +68,88 @@ body {
     row-gap: 8px;
     .driver-info {
         display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-columns: minmax(40px, 0fr) 1fr 3fr 1fr;
         align-items: center;
         padding: 10px 30px 10px 10px;
         overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+        border-radius: 6px;
         cursor: pointer;
         transition: transform .25s cubic-bezier(.7,.98,.86,.98), box-shadow .25s cubic-bezier(.7,.98,.86,.98);
         background-color: #fff;
+        border: solid 1px #67676d;
+        column-gap: 2.5em;
         
         &:hover {
           transform: scale(1.01);
-          box-shadow: 0 9px 47px 11px rgba(51, 51, 51, 0.18);
         }
         .picture {
             max-width: 100%;
             width: 120px;
           }
       }
+      .position{
+        font-family: F1Black;
+        font-size: 2.625rem;
+        line-height: 3rem;
+      }
+      .name{
+        font-size: 22px;
+        line-height: 24px;
+      }
+      .points{
+        font-family: F1Wide;
+        font-size: 16px;
+        line-height: 24px;
+      }
+  }
+
+  .red_bull{
+    &:hover {
+      border: solid 1px #3671C6;
+    }
+  }
+  .mercedes{
+    &:hover {
+      border: solid 1px #6CD3BF;
+    }
+  }
+  .aston_martin{
+    &:hover {
+      border: solid 1px #358C75;
+    }
+  }
+  .mclaren{
+    &:hover {
+      border: solid 1px #F58020;
+    }
+  }
+  .ferrari{
+    &:hover {
+      border: solid 1px #F91536;
+    }
+  }
+  .alpine{
+    &:hover {
+      border: solid 1px #2293D1;
+    }
+  }
+  .williams{
+    &:hover {
+      border: solid 1px #37BEDD;
+    }
+  }
+  .alphatauri{
+    &:hover {
+      border: solid 1px #5E8FAA;
+    }
+  }
+  .alfa{
+    &:hover {
+      border: solid 1px #C92D4B;
+    }
+  }
+  .haas{
+    &:hover {
+      border: solid 1px #B6BABD;
+    }
   }

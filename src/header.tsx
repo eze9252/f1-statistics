@@ -4,9 +4,9 @@ function Header () {
   return (
     <header className='site-header'>
       <div className='site-identity'>
-        <a href='/'>
+        <Link to='/'>
           <span><img src='src/assests/f1_white.png' alt='Formula 1' /></span>
-        </a>
+        </Link>
       </div>
       <nav className='site-navigation'>
         <ul className='nav'>

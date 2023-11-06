@@ -9,15 +9,24 @@ export type DriverInfo = {
     'nationality': string
 }
 
-export type DriversResponse = {
-    'xmlns': string,
-    'series': string,
+export type ConstructorInfo = {
+    'constructorId': string,
+    'name': string,
+    'nationality': string,
     'url': string,
-    'limit': string,
-    'offset': string,
-    'total': string,
-    'DriverTable':{
-        'season': string,
-        'Drivers': DriverInfo[]
-    }
+}
+
+export type DriverStandings = {
+    'points': string,
+    'position': string,
+    'positionText':string,
+    'wins':string,
+    'Driver': DriverInfo,
+    'Constructors': ConstructorInfo[]
+}
+
+export type DriversResponse = {
+    'season': string,
+    'round': string,
+    'DriverStandings': DriverStandings[]
 };
