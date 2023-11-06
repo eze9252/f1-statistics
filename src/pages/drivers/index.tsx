@@ -19,7 +19,7 @@ const Drivers = () => {
             drivers.DriverTable.Drivers.map(driver => {
               return (
                 <article key={driver.driverId} className='driver-info'>
-                  <img src='src/assests/drivers/image.avif' alt='Mark Zuckerberg' className='picture' />
+                  <img src={`src/assests/drivers/${driver.code}/image.avif`} alt={driver.driverId} className='picture' />
                   <span className='leaderboard__name'>{driver.givenName} {driver.familyName}</span>
                   <span className='leaderboard__value'>{driver.permanentNumber}</span>
                 </article>
