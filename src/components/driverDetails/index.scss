@@ -1,0 +1,54 @@
+@import "../../styles/colors";
+
+.driver-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform .25s cubic-bezier(.7,.98,.86,.98);
+    background-color: $white-brand;
+    border: solid 1px $gray-brand;
+    column-gap: 2.5em;
+    
+    &:hover {
+      transform: scale(1.01);
+    }
+    .picture {
+        max-width: 100%;
+        width: 120px;
+    }
+    .position{
+        font-family: F1Black;
+        font-size: 2.625rem;
+        line-height: 3rem;
+        min-width: 62px;
+      }
+      .name{
+        font-size: 22px;
+        width: 100%;
+      }
+      .points{
+        font-family: F1Wide;
+      }
+  }
+
+  @media (max-width: 568px){
+    .driver-info {
+        flex-wrap: wrap;
+        column-gap: 1.5em;
+        row-gap: 1.5em;
+        justify-content: space-between;
+        .position{
+            font-size: 3.625rem;
+            line-height: 3rem;
+        }
+        .picture {
+            width: 200px;
+        }
+        .points{
+            font-size: 1.5rem;
+        }
+    }    
+}

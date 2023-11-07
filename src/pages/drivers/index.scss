@@ -1,0 +1,59 @@
+@import "../../styles/colors";
+
+.drivers {
+    background-color: $white-brand;
+    border-radius: 0 0 12px 12px;
+    padding: 15px 15px 20px;
+    display: grid;
+    row-gap: 8px;
+    .red_bull{
+        &:hover {
+          border: solid 1px $red-bull;
+        }
+      }
+      .mercedes{
+        &:hover {
+          border: solid 1px $mercedes;
+        }
+      }
+      .aston_martin{
+        &:hover {
+          border: solid 1px $aston-martin;
+        }
+      }
+      .mclaren{
+        &:hover {
+          border: solid 1px $mclaren;
+        }
+      }
+      .ferrari{
+        &:hover {
+          border: solid 1px $ferrari;
+        }
+      }
+      .alpine{
+        &:hover {
+          border: solid 1px $alpine;
+        }
+      }
+      .williams{
+        &:hover {
+          border: solid 1px $williams;
+        }
+      }
+      .alphatauri{
+        &:hover {
+          border: solid 1px $alphatauri;
+        }
+      }
+      .alfa{
+        &:hover {
+          border: solid 1px $alfa;
+        }
+      }
+      .haas{
+        &:hover {
+          border: solid 1px $haas;
+        }
+      }
+}

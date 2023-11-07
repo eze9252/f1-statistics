@@ -1,15 +1,20 @@
+import DriverDetails from '../../components/driverDetails'
+import Error from '../../components/error'
 import useDrivers from '../../services/drivers/hooks/useDrivers'
+import { getCurrentYear } from '../../services/utilities/getCurrentYear'
+
+import './index.scss'
 
 const Drivers = () => {
-  const drivers = useDrivers('2023')
+  const currentYear = getCurrentYear()
+  const drivers = useDrivers(currentYear)
 
-  console.log(drivers)
   const shouldRenderNoResults = () => {
-    return drivers && drivers?.DriverStandings.length <= 1
+    return drivers && drivers?.DriverStandings.length < 1
   }
 
   if (shouldRenderNoResults()) {
-    return <></>
+    return <Error />
   }
 
   return (
@@ -19,12 +24,7 @@ const Drivers = () => {
           {
             drivers.DriverStandings.map(driver => {
               return (
-                <article key={driver.Driver.driverId} className={`driver-info ${driver.Constructors[0].constructorId}`}>
-                  <span className='position'>{driver.position}</span>
-                  <img src={`src/assests/drivers/${driver.Driver.code}/image.avif`} alt={driver.Driver.driverId} className='picture' />
-                  <span className='name'>{driver.Driver.givenName} {driver.Driver.familyName}</span>
-                  <span className='points'>{driver.points} PTS</span>
-                </article>
+                <DriverDetails key={driver.position} driver={driver} />
               )
             })
             }
