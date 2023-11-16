@@ -21,6 +21,7 @@ const Drivers = () => {
     <>
       {drivers && (
         <main className='drivers'>
+          <h1 className='f1-black--xxl no-margin'>F1 Drivers {currentYear}</h1>
           {
             drivers.DriverStandings.map(driver => {
               return (

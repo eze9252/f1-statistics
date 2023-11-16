@@ -6,54 +6,90 @@
     padding: 15px 15px 20px;
     display: grid;
     row-gap: 8px;
+    .name::before{
+      content: "";
+      width: 5px;
+      height: 30px;
+      margin-right: 8px;
+    }
     .red_bull{
-        &:hover {
-          border: solid 1px $red-bull;
-        }
+      .name::before{
+        background-color: $red-bull;
       }
-      .mercedes{
-        &:hover {
-          border: solid 1px $mercedes;
-        }
+      &:hover {
+        border: solid 1px $red-bull;
       }
-      .aston_martin{
-        &:hover {
-          border: solid 1px $aston-martin;
-        }
+    }
+    .mercedes{
+      .name::before{
+        background-color: $mercedes;
       }
-      .mclaren{
-        &:hover {
-          border: solid 1px $mclaren;
-        }
+      &:hover {
+        border: solid 1px $mercedes;
       }
-      .ferrari{
-        &:hover {
-          border: solid 1px $ferrari;
-        }
+    }
+    .aston_martin{
+      .name::before{
+        background-color: $aston-martin;
       }
-      .alpine{
-        &:hover {
-          border: solid 1px $alpine;
-        }
+      &:hover {
+        border: solid 1px $aston-martin;
       }
-      .williams{
-        &:hover {
-          border: solid 1px $williams;
-        }
+    }
+    .mclaren{
+      .name::before{
+        background-color: $mclaren;
       }
-      .alphatauri{
-        &:hover {
-          border: solid 1px $alphatauri;
-        }
+      &:hover {
+        border: solid 1px $mclaren;
       }
-      .alfa{
-        &:hover {
-          border: solid 1px $alfa;
-        }
+    }
+    .ferrari{
+      .name::before{
+        background-color: $ferrari;
       }
-      .haas{
-        &:hover {
-          border: solid 1px $haas;
-        }
+      &:hover {
+        border: solid 1px $ferrari;
       }
+    }
+    .alpine{
+      .name::before{
+        background-color: $alpine;
+      }
+      &:hover {
+        border: solid 1px $alpine;
+      }
+    }
+    .williams{
+      .name::before{
+        background-color: $williams;
+      }
+      &:hover {
+        border: solid 1px $williams;
+      }
+    }
+    .alphatauri{
+      .name::before{
+        background-color: $alphatauri;
+      }
+      &:hover {
+        border: solid 1px $alphatauri;
+      }
+    }
+    .alfa{
+      .name::before{
+        background-color: $alfa;
+      }
+      &:hover {
+        border: solid 1px $alfa;
+      }
+    }
+    .haas{
+      .name::before{
+        background-color: $haas;
+      }
+      &:hover {
+        border: solid 1px $haas;
+      }
+    }
 }

@@ -8,3 +8,21 @@ body {
 main{
   padding-top: 90px !important;
 }
+
+.f1-black--xxl {
+  font-family: F1Black;
+  font-size: 32px;
+  line-height: 36px;
+  padding-bottom: 20px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+@media (min-width: 768px){
+  .f1-black--xxl {
+    font-size: 62px;
+    line-height: 62px;
+  }
+}

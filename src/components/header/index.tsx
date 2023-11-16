@@ -13,6 +13,7 @@ function Header () {
       <nav className='site-navigation'>
         <ul className='nav'>
           <li><Link to='/drivers'>Drivers</Link></li>
+          <li><Link to='/teams'>Teams</Link></li>
         </ul>
       </nav>
     </header>

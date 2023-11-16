@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import getDrivers from '../../../src/services/drivers/getDrivers'
-import { DriversResponse } from '../../../src/services/drivers/dto/drivers'
+import { DriversResponse } from '../../../src/services/dto/drivers'
 
 describe('Service drivers', () => {
   const CORRECT_YEAR = '2023'

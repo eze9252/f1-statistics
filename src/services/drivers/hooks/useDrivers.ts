@@ -1,5 +1,5 @@
 import getDrivers from '../getDrivers'
-import { DriversResponse } from '../dto/drivers'
+import { DriversResponse } from '../../dto/drivers'
 import { useState, useEffect } from 'react'
 
 const useDrivers = (year: string): DriversResponse | null => {

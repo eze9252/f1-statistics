@@ -1,4 +1,4 @@
-import { DriverStandings } from '../../services/drivers/dto/drivers'
+import { DriverStandings } from '../../services/dto/drivers'
 import React from 'react'
 
 import './index.scss'

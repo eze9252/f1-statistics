@@ -1,3 +1,5 @@
+import { ConstructorInfo } from './teams'
+
 export type DriverInfo = {
     'driverId': string,
     'permanentNumber': string,
@@ -7,13 +9,6 @@ export type DriverInfo = {
     'familyName': string,
     'dateOfBirth': string,
     'nationality': string
-}
-
-export type ConstructorInfo = {
-    'constructorId': string,
-    'name': string,
-    'nationality': string,
-    'url': string,
 }
 
 export type DriverStandings = {

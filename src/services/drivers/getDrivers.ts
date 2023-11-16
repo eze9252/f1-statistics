@@ -1,5 +1,5 @@
 import { SERVICE_BASE_URL } from '../config'
-import { DriversResponse } from './dto/drivers'
+import { DriversResponse } from '../dto/drivers'
 
 class GetDrivers {
   public async execute (year: string): Promise<DriversResponse | null> {
